@@ -17,6 +17,7 @@ const produto = []
 
 app.post('/produtos', (req,res) => {
     const body = req.body
+    const novoId = produto.length > 0 ? Math.max(...produtos.map(p => p.id)) + 1 : 0;
     if(produtoInvalido(body)){
         res.status(400).send({
             message: 
@@ -102,11 +103,12 @@ app.delete("/produtos/:id", (req,res) =>{
 
 const produtoInvalido = (produto) => {
     if(produto.nome == null || produto.nome.trim() == ""){
-        return false
+        return true
     }
     if(produto.descricao == null || produto.descricao.trim() == ""){
-        return false
+        return true
     }
+    return false
 }
 
 

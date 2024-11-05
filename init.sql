@@ -5,5 +5,5 @@ CREATE TABLE IF NOT EXISTS produto.produto (
     nome VARCHAR(100) NOT NULL,
     descricao VARCHAR(100) NOT NULL,
     preco float,
-    estoque INT 
+    estoque INT
 );
