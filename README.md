@@ -7,15 +7,21 @@ Instale os Seguintes softwares e dependências com os seguintes comandos:
 
 Docker: sudo apt update
         sudo apt install -y ca-certificates curl gnupg lsb-release
+        
         sudo mkdir -p /etc/apt/keyrings
+        
         curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+        
         sudo apt update
+        
         sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 NPM: npm install
 
 Node.js: curl -fsSL https://fnm.vercel.app/install | bash
+         
          source ~/.bashrc
+         
          fnm use --install-if-missing 22
 
 Postgres: sudo apt install -y postgresql postgresql-contrib
