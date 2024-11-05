@@ -5,7 +5,10 @@ Projeto Backend que utiliza Node.js, Express e postgres.
 Pré-requisitos
 Instale os Seguintes softwares e dependências com os seguintes comandos:
 
-Docker: sudo apt update
+Docker: 
+
+        sudo apt update
+        
         sudo apt install -y ca-certificates curl gnupg lsb-release
         
         sudo mkdir -p /etc/apt/keyrings
@@ -18,13 +21,17 @@ Docker: sudo apt update
 
 NPM: npm install
 
-Node.js: curl -fsSL https://fnm.vercel.app/install | bash
+Node.js: 
+
+        curl -fsSL https://fnm.vercel.app/install | bash
          
          source ~/.bashrc
          
          fnm use --install-if-missing 22
 
-Postgres: sudo apt install -y postgresql postgresql-contrib
+Postgres: 
+
+        sudo apt install -y postgresql postgresql-contrib
 
 Mantenha o Postgres e o docker em execução
 
