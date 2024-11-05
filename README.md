@@ -19,7 +19,9 @@ Docker:
         
         sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-NPM: npm install
+NPM: 
+
+    npm install
 
 Node.js: 
 
