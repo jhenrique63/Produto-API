@@ -38,7 +38,8 @@ Postgres:
 Mantenha o Postgres e o docker em execução
 
 1. Clone o repositório:
-git clone https://github.com/jhenrique63/Produto-API
+        
+        git clone https://github.com/jhenrique63/Produto-API
 
 
 Altere o arquivo .env com os dados do seu banco de dados, assim como no exemplo abaixo:
@@ -51,13 +52,13 @@ DATABASE=mobile
 
 Execute os seguintes comandos para rodar a aplicação:
 
-docker-compose up 
+        docker-compose up 
 
 
 
 Acesse a API no navegador ou no Postman usando a URL:
 
-http://localhost:3000/produtos/
+        http://localhost:3000/produtos/
 
 
 Endpoints Disponíveis
@@ -70,4 +71,4 @@ DELETE /produtos/:id -  Deleta um produto da lista.
 
 Para encerrar a execução da aplicação, use:
 
-docker-compose down 
+        docker-compose down 
