@@ -45,9 +45,13 @@ Mantenha o Postgres e o docker em execução
 Altere o arquivo .env com os dados do seu banco de dados, assim como no exemplo abaixo:
 
 DATABASE_USERNAME=postgres;
+
 DATABASE_PASSWORD=password;
+
 DATABASE_HOST=postgres;
+
 DATABASE_PORT=5432;
+
 DATABASE=mobile.
 
 Execute os seguintes comandos para rodar a aplicação:
@@ -63,9 +67,13 @@ Acesse a API no navegador ou no Postman usando a URL:
 
 Endpoints Disponíveis
 POST /produtos/ - Cria um novo produto;
+
 GET /produtos/ - Devolve a lista de Produtos;
+
 GET /produtos/:id - Devolve um produto pelo ID;
+
 PUT /produtos/:id - Atualiza os dados de um produto pelo ID;
+
 DELETE /produtos/:id -  Deleta um produto da lista.
 
 
