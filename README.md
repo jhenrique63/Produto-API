@@ -23,6 +23,10 @@ NPM:
 
     npm install
 
+NODEMON:
+
+    npm install nodemon --save-dev 
+
 Node.js: 
 
         curl -fsSL https://fnm.vercel.app/install | bash
